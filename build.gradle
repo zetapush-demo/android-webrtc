@@ -19,10 +19,11 @@ allprojects {
     repositories {
         google()
         jcenter()
-
         maven {
-            //url "http://nexus.zpush.io:8080/repository/public/"
-            url "http://nexus-ci.zpush.io:8082/repository/maven-public/"
+            url "http://nexus.zpush.io:8080/repository/zetandroid/"
+        }
+        maven {
+            url "http://nexus.zpush.io:8080/repository/public/"
         }
     }
 }

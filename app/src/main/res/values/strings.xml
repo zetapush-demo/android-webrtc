@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ZetaVisio</string>
+    <string name="saved_sandboxId">sandboxId</string>
+    <string name="saved_login">login</string>
+    <string name="saved_password">password</string>
+</resources>

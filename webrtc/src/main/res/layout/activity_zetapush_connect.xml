@@ -34,9 +34,9 @@
             android:id="@+id/buttonPublicRoom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Public Room" />
+            android:text="Join room" />
 
-        <Button
+        <!--<Button
             android:id="@+id/buttonLaunch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             android:id="@+id/buttonVisio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Join Private Room" />
+            android:text="Join Private Room" />-->
 
         <Button
             android:id="@+id/buttonSettings"

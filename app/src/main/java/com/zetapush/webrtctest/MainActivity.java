@@ -27,10 +27,6 @@ public class MainActivity extends Activity {
     private SmartClient client;
     private ZetaPushConnectionReceiver      zetaPushReceiver = new ZetaPushConnectionReceiver();
 
-    private final String                    SANDBOX_ID       = "x4ekRxc5";
-    private final String                    LOGIN            = "android";
-    private final String                    PASSWORD         = "password";
-
     private Button btnLaunch;
     private Button btnSettings;
     private Button btnConnect;
@@ -198,12 +194,14 @@ public class MainActivity extends Activity {
                     btnLaunch.setEnabled(true);
                     btnConnect.setEnabled(false);
                     btnDisconnect.setEnabled(true);
+                    Toast.makeText(MainActivity.this, "Connected", Toast.LENGTH_SHORT).show();
                     break;
                 case ZetaPushService.FLAG_CONNECTION_CLOSED:
                     Log.d("ConnectionReceiver", "Connection closed");
                     btnLaunch.setEnabled(false);
                     btnConnect.setEnabled(true);
                     btnDisconnect.setEnabled(false);
+                    Toast.makeText(MainActivity.this, "disconnected", Toast.LENGTH_SHORT).show();
                     break;
             }
         }

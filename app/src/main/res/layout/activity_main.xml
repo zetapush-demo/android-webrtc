@@ -13,7 +13,8 @@
         android:layout_marginTop="14dp"
         android:contentDescription="Sandbox Id"
         android:ems="10"
-        android:inputType="text" />
+        android:inputType="text"
+        android:hint="Sandbox ID" />
 
     <EditText
         android:id="@+id/editTextLogin"
@@ -21,7 +22,8 @@
         android:layout_height="wrap_content"
         android:contentDescription="User Name"
         android:ems="10"
-        android:inputType="text" />
+        android:inputType="text"
+        android:hint="Login" />
 
     <EditText
         android:id="@+id/editTextPassword"
@@ -30,7 +32,7 @@
         android:contentDescription="Password"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="123456" />
+        android:hint="Password"/>
 
     <Button
         android:id="@+id/buttonConnect"

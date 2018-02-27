@@ -1,14 +1,14 @@
 package com.zetapush.visio;
 
 import com.zetapush.client.highlevel.ZetapushClient;
-import com.zetapush.core.callBrick.addToMissedCallInput;
-import com.zetapush.core.callBrick.callGroupInput;
-import com.zetapush.core.callBrick.getCurrentCallByUserInput;
-import com.zetapush.core.callBrick.getMissedCallByUserInput;
-import com.zetapush.core.callBrick.setCallAcceptedInput;
-import com.zetapush.core.callBrick.setCallRefusedInput;
-import com.zetapush.core.callBrick.setCallTerminatedInput;
-import com.zetapush.core.callBrick.timeoutCallInput;
+import com.zetapush.core.visio.addToMissedCallInput;
+import com.zetapush.core.visio.callGroupInput;
+import com.zetapush.core.visio.getCurrentCallByUserInput;
+import com.zetapush.core.visio.getMissedCallByUserInput;
+import com.zetapush.core.visio.setCallAcceptedInput;
+import com.zetapush.core.visio.setCallRefusedInput;
+import com.zetapush.core.visio.setCallTerminatedInput;
+import com.zetapush.core.visio.timeoutCallInput;
 import com.zetapush.core.file.confirmFileUploadInput;
 import com.zetapush.core.file.deleteFileEntryInput;
 import com.zetapush.core.file.getFileEntryInput;

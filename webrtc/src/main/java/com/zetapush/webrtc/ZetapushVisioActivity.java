@@ -154,7 +154,7 @@ public class ZetapushVisioActivity extends ZetaPushBaseActivity implements AppRT
 
     // List of mandatory application permissions.
     private static final String[] MANDATORY_PERMISSIONS = {"android.permission.MODIFY_AUDIO_SETTINGS",
-            "android.permission.RECORD_AUDIO", "android.permission.INTERNET"};
+            "android.permission.RECORD_AUDIO", "android.permission.INTERNET", "android.permission.CAMERA"};
 
     // Peer connection statistics callback period in ms.
     private static final int STAT_CALLBACK_PERIOD = 1000;

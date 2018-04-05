@@ -21,6 +21,8 @@ import com.zetapush.webrtc.ZetapushConnectActivity;
 
 import org.appspot.apprtc.SettingsActivity;
 
+import java.util.ArrayList;
+
 public class MainActivity extends Activity {
 
     // ZetaPush Service
@@ -40,8 +42,8 @@ public class MainActivity extends Activity {
     private static final String TAG = MainActivity.class.getSimpleName();
 
     // List of mandatory application permissions.
-    private static final String[] MANDATORY_PERMISSIONS = {"android.permission.MODIFY_AUDIO_SETTINGS",
-            "android.permission.RECORD_AUDIO", "android.permission.INTERNET", "android.permission.CAMERA"};
+    private static final String[] MANDATORY_PERMISSIONS = {"android.permission.CAMERA", "android.permission.MODIFY_AUDIO_SETTINGS",
+            "android.permission.RECORD_AUDIO", "android.permission.INTERNET"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -135,6 +137,7 @@ public class MainActivity extends Activity {
 
     public void checkPermissions(){
         // Check for mandatory permissions.
+        ArrayList<String> permissionsToAsk = new ArrayList<>();
         for (String permission : MANDATORY_PERMISSIONS) {
             if (checkCallingOrSelfPermission(permission) != PackageManager.PERMISSION_GRANTED) {
                 //logAndToast("Permission " + permission + " is not granted");
@@ -143,11 +146,13 @@ public class MainActivity extends Activity {
                 //finish();
                 //return;
 
-                ActivityCompat.requestPermissions(this, new String[]{permission}, 0);
+                permissionsToAsk.add(permission);
             } else {
                 Log.d("Permission ", "Permission " + permission + " is Granted");
             }
         }
+        String[] permissions = new String[permissionsToAsk.size()];
+        ActivityCompat.requestPermissions(this, permissionsToAsk.toArray(permissions), 0);
     }
 
     // Log |msg| and Toast about it.

@@ -91,9 +91,9 @@ public class ZetapushConnectActivity extends ZetaPushBaseActivity implements Vis
 
     private static final int CONNECTION_REQUEST = 1;
 
-    private Button btnLaunch;
+    //private Button btnLaunch;
     private Button btnLaunchPublicRoom;
-    private Button btnVisio;
+    //private Button btnVisio;
     private Button btnSettings;
     private EditText etRoomName;
     private ZetapushClient zetapushClient;
@@ -195,19 +195,19 @@ public class ZetapushConnectActivity extends ZetaPushBaseActivity implements Vis
 
         setContentView(R.layout.activity_zetapush_connect);
 
-        btnLaunch = (Button) findViewById(R.id.buttonLaunch);
+        // btnLaunch = (Button) findViewById(R.id.buttonLaunch);
         btnLaunchPublicRoom = (Button) findViewById(R.id.buttonPublicRoom);
 
         etRoomName = (EditText) findViewById(R.id.editTextRoomName);
-        btnVisio = (Button) findViewById(R.id.buttonVisio);
+        //btnVisio = (Button) findViewById(R.id.buttonVisio);
         btnSettings = (Button) findViewById(R.id.buttonSettings);
 
-        btnLaunch.setOnClickListener(new View.OnClickListener() {
+        /*btnLaunch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 launchPrivateRoom();
             }
-        });
+        });*/
 
         btnLaunchPublicRoom.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -216,12 +216,12 @@ public class ZetapushConnectActivity extends ZetaPushBaseActivity implements Vis
             }
         });
 
-        btnVisio.setOnClickListener(new View.OnClickListener() {
+        /*btnVisio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 launchVisioActivity();
             }
-        });
+        });*/
 
         btnSettings.setOnClickListener(new View.OnClickListener() {
             @Override
